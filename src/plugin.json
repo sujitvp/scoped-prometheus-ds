@@ -1,0 +1,40 @@
+{
+  "type": "datasource",
+  "name": "Scope Enforced Prometheus DS",
+  "id": "scoped-prometheus-datasource",
+
+  "dependencies": {
+    "grafanaVersion": "4.0.x",
+    "plugins": [ ]
+  },
+
+  "includes": [
+  ],
+
+  "metrics": true,
+  "alerting": true,
+  "annotations": true,
+
+  "queryOptions": {
+    "minInterval": true
+  },
+
+  "info": {
+    "description": "Prometheus datasource with ability to enforce data scope, through injection of filters into queries sent to prometheus.",
+    "author": {
+      "name": "Sujit Vasudev",
+      "url": "optional url"
+    },
+    "keywords": ["searchable", "key", "words"],
+    "logos": {
+      "small": "img/your_logo.png",
+      "large": "img/your_logo.png"
+    },
+    "links": [
+      {"name": "Project site", "url": "https://github.com/sujitvp/scopedprometheus-datasource"},
+      {"name": "Apache License", "url": "https://github.com/sujitvp/scopedprometheus-datasource/blob/master/LICENSE"}
+    ],
+    "version": "1.0.0",
+    "updated": "2018-03-15"
+  }
+}
