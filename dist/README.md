@@ -1,4 +1,4 @@
-## Scope Envforced Prometheus Data Source For Grafana
+## Scope Enforced Prometheus Data Source For Grafana
 
 This plugin is a Prometheus datasource that supports scope enforcement. This allows for different instances of the help you get started with writing a data source plugin for Grafana in TypeScript.
 
