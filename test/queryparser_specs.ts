@@ -22,7 +22,7 @@ describe('ScopedPrometheusQueryParser', function () {
     suites.tests.forEach(function (test) {
       it('should average less than 1 ms per injection', function () {
         var beg = new Date().getTime();
-        var loops = 100;
+        var loops = 20;
         for (var i = 0; i < loops; i++) {
           qp.injectScopeIntoQuery(test.query, suites.scope);
         }

@@ -14,12 +14,14 @@ export default class ScopedPrometheusQueryParser {
     private txttbl;
     private re;
     constructor();
-    injectScopeIntoQuery: (query: string, scope: string) => string;
+    injectScopeIntoQuery(query: string, scope: string): string;
+    getCache(): string[];
+    clearCache(): void;
     private saveText(s);
     private retrieveText(s);
     private parseFunctions();
     private parseQuery(q, i?);
-    private parseSegment(a, b);
-    private processStuff(s, b);
+    private parseFunctionArguments(a, b);
+    private processargs(s, b);
     private processOps(s);
 }
